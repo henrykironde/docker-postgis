@@ -1,5 +1,5 @@
 sudo: required
-
+dist: bionic
 language: python
 
 services:
@@ -10,7 +10,9 @@ virtualenv:
 
 python:
   - '2.7'
-
+  - '3.5'
+  - '3.6.7'
+  - '3.7.1'
 script:
   - ./build.sh
   - pushd sample/replication
